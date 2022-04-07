@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="./request.js" type="application/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+
+        <div class="menu-bar">
+            <h1>Forget-Me-Not</h1>
+        </div>
+
+        <div class="main-content">
+
+            <h1>hi! welcome to the forget-me-not webservice</h1>
+
+            <button onClick="sendCreateUserRequest()">create a new user</button>
+            
+            <button onClick="sendGetItemRequest()">fetch items for user:</button>
+            <input type="text" placeholder="user id" id="userValue"><br>
+            <button onClick="sendDeleteItemRequest()">delete item with id:</button>
+            <input type="text" placeholder="item id" id="itemValue"><br>
+            <button onClick="sendUpdateItemRequest()">update item with values:</button>
+            <button onClick="sendCreateItemRequest()">create item with values:</button>
+            <input type="text" placeholder="item days" id="itemDays"><br>
+            <input type="text" placeholder="item desc" id="itemDesc"><br>
+
+            <table>
+                <td id="idcol">
+                    <ul>id</ul>
+                </td>
+                <td id="daycol">
+                    <ul>day</ul>
+                </td>
+                <td id="descriptioncol">
+                    <ul>description</ul>
+                </td>
+            </table>
+        </div>
+    </body>
+</html>
